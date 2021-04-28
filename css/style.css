@@ -20,7 +20,11 @@ header{
     margin: auto;
     padding-top:10px;
 }
-
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
 header img{
     width: 150px;
     height: 100%;
@@ -28,21 +32,15 @@ header img{
 header nav{
     width: 100%;
 }
-header nav ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
-}
-
 .home { 
     color:#28a6b3;
     font-size: 20px;
 } 
-header nav ul li{
+ ul li{
     margin:10px;
 }
 
-header nav ul li a {
+ul li a {
     text-decoration: none;
     font-weight: 500;
     color:black;
@@ -217,7 +215,47 @@ header nav ul li a:hover{
 }
 
 
+footer{
+    height: 270px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
+    text-align: center;
+}
+footer ul li a{
+    color: white;
+}
+footer ul li a:hover{
+    color: #28a6b3;
+
+}
+footer ul{
+    padding:0;
+}
+.icons{
+    display: flex;
+}
+footer p{
+    color: lightgray;
+    margin: 10px;
+}
+.active{
+    color: #28a6b3;
+}
+i{
+    width: 50px;
+    height: 50px;
+    color: grey;
+    text-align: center;
+}
+i::before{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
 /* typewritter */
 
 
