@@ -35,6 +35,10 @@
             <button type="submit">Submit</button>
         </form>
     </div>
+    <h1>We dont exist on the map!</h1>
+    <div id="maps">
+
+    </div>
     <footer>
         <ul>
             <li><a href="index.html" class = "home"> NetCode</a></li>
@@ -52,7 +56,19 @@
         <p class ="active">info@NetCode.com</p>
         <p> © 2021 NetCode </p>
     </footer>
-    
     <script src="script/script.js"></script>
+    <script>
+        function myMap() {
+            var mapProp= {
+             center:new google.maps.LatLng(51.508742,-0.120850),
+            zoom:5,
+                };
+            var map = new google.maps.Map(document.getElementById("maps"),mapProp);
+  }
+    </script>
+
+   
 </body>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-fY4Qca4PFLkkQXXweTmlB6fTbQ4vv2s&callback=myMap"
+type="text/javascript"></script>
 </html>

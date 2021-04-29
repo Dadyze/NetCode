@@ -173,6 +173,13 @@ i::before{
     margin-bottom: 15px;
 }
 
+#maps{
+    width: 60%;
+    margin:auto;
+    height:800px;
+    margin-bottom: 20px;
+}
+
 @media only screen and (max-width: 768px)  {
     
     header nav ul{
