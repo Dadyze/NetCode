@@ -29,43 +29,23 @@ header nav{
 }
 .home { 
     color:#28a6b3;
-    font-size: 20px;
+   
 } 
  ul li{
     margin:10px;
 }
 
-ul li a {
+ ul li a {
     text-decoration: none;
     font-weight: 500;
     color:black;
-    font-size: 18px;
+    font-size: 24px;
     transition: font-size, 1s ease-out;
 }
-header nav ul li a:hover{
+ul li a:hover{
     color:#28a6b3;
     font-size: 24px;
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 footer{
     height: 270px;
@@ -155,7 +135,7 @@ video{
 }
 .pictures img{
     width: 100%;
-    height: 250px;
+    height: 350px;
 }
 
 .pictures img:hover{
@@ -163,3 +143,49 @@ video{
     cursor: pointer;
 }
 
+@media only screen and (max-width: 768px){
+    .pictures{
+        grid-template-columns: 1fr;
+    }
+    video{
+        width: 100%;
+        
+    }
+    header nav ul{
+        position: fixed;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        color: white;
+        opacity: .8;
+        width: 100%;
+        left: -5%;
+        top: -2%;
+        display: none;
+        z-index: 2;
+    }
+    header{
+        width: 150px;;
+    }
+    .open{
+        display:flex;
+    }
+    nav ul li a{
+        color: white;
+        font-size: 24px;
+    }
+    nav ul li a:hover{
+        color: #28a6b3;
+    }
+    #logo{
+        z-index: 3;
+        justify-content: center;
+    }
+    footer ul li a{
+        font-size: 16px;
+    }
+    footer ul{
+        flex-wrap:wrap;
+    }
+}
